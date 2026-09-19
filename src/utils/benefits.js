@@ -26,7 +26,7 @@ export function capFor(b,previous) {
  return [...b.tiers].reverse().find(t=>previous!==undefined&&previous>=t.previousSpend)?.monthlyCap??b.tiers[0].monthlyCap;
 }
 export function estimateBenefit(b,card,amount,context={},date=new Date()) {
- const previous=card.history?.[previousMonth(date)];
+ const previous=context.assumePreviousSpend?(b.previousSpend??b.tiers?.[0]?.previousSpend):card.history?.[previousMonth(date)];
  const notes=[];
  const excluded=b.exclusions.some(x=>normalize(context.query||'').includes(normalize(x)));
  if(context.mode==='excluded'||excluded)return {value:null,eligible:false,notes:['혜택 제외 거래'],b};
@@ -35,7 +35,8 @@ export function estimateBenefit(b,card,amount,context={},date=new Date()) {
  if(b.packages&&!card.samsungPackage)notes.push('삼성 선택 패키지 확인 필요');
  if(b.mode&&context.mode!==b.mode) return {value:null,eligible:false,notes:[b.mode==='recurring'?'정기결제·자동납부 선택 시 비교':'네이버 회원·적립 대상 주문 여부 선택 필요'],b};
  if(b.previousSpend>0){
-  if(previous===undefined){notes.push(`${previousMonth(date)} 실적 기록 없음`);if(b.tiers)notes.push('최소 실적 구간 한도 기준');}
+  if(context.assumePreviousSpend)notes.push('전월 실적 조건 충족 가정 · 기본 구간 기준');
+  else if(previous===undefined){notes.push(`${previousMonth(date)} 실적 기록 없음`);if(b.tiers)notes.push('최소 실적 구간 한도 기준');}
   else if(previous<b.previousSpend)return {value:0,eligible:false,notes:[`전월 기록 ${money(previous)}원 · 기준 미달 (신규 유예는 별도 확인)`],b};
   else notes.push(`전월 기록 ${money(previous)}원 · 기준 충족`);
  }
@@ -61,12 +62,12 @@ function matches(b,merchant,mode) {
   return keywords.some(k=>k===normalized||normalized.length>=2&&(k.includes(normalized)||normalized.includes(k)));
  });
 }
-export function compareBenefits(cards,catalog,status,query,amount,mode='direct',date=new Date(),customMerchants=[]) {
+export function compareBenefits(cards,catalog,status,query,amount,mode='direct',date=new Date(),customMerchants=[],assumptions={}) {
  const merchant=resolveMerchant(query,customMerchants);if(!merchant)return [];
  return cards.map(card=>{
   const product=productFor(card,catalog);
   if(!product)return {card,value:null,reason:'보유 상품·Edition 또는 PACK을 먼저 확인해주세요.',notes:[],state:'상품 확인 필요'};
-  const candidates=product.benefits.filter(b=>matches(b,merchant,mode)).map(b=>estimateBenefit(b,card,amount,{query:merchant.label,mode},date));
+  const candidates=product.benefits.filter(b=>matches(b,merchant,mode)).map(b=>estimateBenefit(b,card,amount,{query:merchant.label,mode,...assumptions},date));
   // A dedicated Naver purchase must not fall back to the unlimited general rate.
   const naverTarget=product.id==='naver-ed1'&&product.benefits.some(b=>b.scope==='merchant'&&matches(b,merchant,mode));
   const scoped=naverTarget?candidates.filter(e=>e.b.scope!=='general'):candidates;

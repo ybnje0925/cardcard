@@ -26,6 +26,9 @@ test('unknown edition never inherits current product; manual fields survive vali
  const cs=seedData().cards;cs[1].edition='Edition2';assert.equal(productFor(cs[1],catalog),undefined);assert.equal(compare(cs,'스타벅스',10000).find(r=>r.card.id==='naver').value,null);
  const d=seedData();d.cards[0].memo='내 메모';d.cards[0].benefitSummary=['사용자 수정'];d.cards[0].samsungPackage='6';const migrated=validateData(structuredClone(d));assert.equal(migrated.cards[0].memo,'내 메모');assert.deepEqual(migrated.cards[0].benefitSummary,['사용자 수정']);assert.equal(migrated.cards[1].officialProductId,'naver-ed1');assert.equal(migrated.cards[1].edition,'Edition1 · 원본');assert.equal(migrated.cards[2].officialProductId,'kb-all');assert.equal(migrated.cards[2].edition,'KB ALL');assert.equal(migrated.cards[3].officialProductId,'nh-discount');assert.equal(migrated.cards[3].edition,'할인 PACK');
 });
+test('fixed-cost assumption bypasses previous-month shortfall and uses base tier',()=>{
+ const cs=cards();for(const c of cs)c.history['2026-08']=0;const r=compareBenefits(cs,catalog,status,'넷플릭스',17000,'recurring',new Date(2026,8,19),[],{assumePreviousSpend:true});const kb=r.find(x=>x.card.id==='kb');assert.ok(kb.value>0);assert.match(kb.notes.join(' '),/실적 조건 충족 가정/);
+});
 test('current-month spending never satisfies previous-month condition; zero differs from missing',()=>{
  const cs=cards();cs[0].currentSpentKRW=900000;cs[0].monthlyGoalKRW=10000;cs[0].history['2026-08']=0;const r=compare(cs,'스타벅스',10000);assert.equal(r.find(r=>r.card.id==='samsung').value,0);assert.notEqual(r[0].card.id,'samsung');
  delete cs[0].history['2026-08'];assert.equal(compare(cs,'스타벅스',10000)[0].value,5000);assert.match(compare(cs,'스타벅스',10000)[0].notes.join(' '),/기록 없음/);
