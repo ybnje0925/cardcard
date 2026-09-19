@@ -1,0 +1,258 @@
+{
+  "version": 1,
+  "favorites": [
+    "스타벅스"
+  ],
+  "cards": [
+    {
+      "id": "samsung",
+      "issuer": "삼성카드",
+      "displayName": "삼성 나의 카드",
+      "edition": "taptap O",
+      "benefitSummary": [
+        "스타벅스 할인",
+        "대중교통·택시 할인",
+        "이동통신 할인",
+        "쇼핑 할인",
+        "CGV·롯데시네마 할인",
+        "해외 적립"
+      ],
+      "merchantRules": [
+        {
+          "keywords": [
+            "스타벅스",
+            "커피"
+          ],
+          "benefitLabel": "스타벅스·커피 할인",
+          "priority": 10
+        },
+        {
+          "keywords": [
+            "버스",
+            "지하철",
+            "택시",
+            "카카오택시"
+          ],
+          "benefitLabel": "대중교통·택시 할인",
+          "priority": 10
+        },
+        {
+          "keywords": [
+            "SKT",
+            "KT",
+            "LG U+",
+            "통신비"
+          ],
+          "benefitLabel": "이동통신 할인",
+          "priority": 10
+        },
+        {
+          "keywords": [
+            "CGV",
+            "롯데시네마"
+          ],
+          "benefitLabel": "영화 할인",
+          "priority": 10
+        }
+      ],
+      "visual": {
+        "theme": "black",
+        "label": "taptap O",
+        "brand": "SAMSUNG"
+      },
+      "monthlyGoalKRW": 400000,
+      "currentSpentKRW": 210000,
+      "monthKey": "2026-09",
+      "autopayItems": [
+        {
+          "id": "21b2405f-2537-4b56-81af-c7622a9c57cd",
+          "name": "넷플릭스",
+          "category": "구독",
+          "amount": 70000,
+          "day": 1,
+          "inclusion": "포함",
+          "memo": ""
+        }
+      ],
+      "history": {},
+      "memo": "통신비 카드"
+    },
+    {
+      "id": "naver",
+      "issuer": "현대카드",
+      "displayName": "네이버 현대카드",
+      "edition": "확인 필요",
+      "benefitSummary": [
+        "네이버페이 포인트 적립",
+        "네이버쇼핑 관련 혜택",
+        "스마트스토어 관련 혜택",
+        "네이버플러스 관련 혜택",
+        "일반 가맹점 기본 적립"
+      ],
+      "merchantRules": [
+        {
+          "keywords": [
+            "네이버",
+            "네이버쇼핑",
+            "스마트스토어",
+            "네이버페이",
+            "네이버플러스",
+            "NAVER"
+          ],
+          "benefitLabel": "네이버 서비스 적립",
+          "priority": 10
+        },
+        {
+          "keywords": [
+            "일반",
+            "기본"
+          ],
+          "benefitLabel": "일반 가맹점 기본 적립",
+          "priority": 1
+        }
+      ],
+      "visual": {
+        "theme": "green",
+        "label": "NAVER",
+        "brand": "NAVER × Hyundai Card"
+      },
+      "monthlyGoalKRW": 300000,
+      "currentSpentKRW": 0,
+      "monthKey": "2026-09",
+      "autopayItems": [],
+      "history": {},
+      "memo": ""
+    },
+    {
+      "id": "kb",
+      "issuer": "KB국민카드",
+      "displayName": "KB ALL YOU NEED",
+      "edition": "확인 필요",
+      "benefitSummary": [
+        "국내 일반 결제 할인·적립",
+        "해외 결제 혜택",
+        "OTT 혜택",
+        "쇼핑 멤버십 혜택",
+        "이동통신 자동납부"
+      ],
+      "merchantRules": [
+        {
+          "keywords": [
+            "넷플릭스",
+            "유튜브",
+            "유튜브 프리미엄",
+            "티빙",
+            "웨이브",
+            "디즈니플러스"
+          ],
+          "benefitLabel": "OTT 구독 혜택",
+          "priority": 10
+        },
+        {
+          "keywords": [
+            "네이버플러스",
+            "쿠팡",
+            "로켓와우"
+          ],
+          "benefitLabel": "쇼핑 멤버십 혜택",
+          "priority": 10
+        },
+        {
+          "keywords": [
+            "SKT",
+            "KT",
+            "LG U+",
+            "통신비"
+          ],
+          "benefitLabel": "이동통신 자동납부 혜택",
+          "priority": 10
+        },
+        {
+          "keywords": [
+            "해외결제"
+          ],
+          "benefitLabel": "해외 결제 혜택",
+          "priority": 10
+        },
+        {
+          "keywords": [
+            "일반",
+            "기본"
+          ],
+          "benefitLabel": "국내 일반 결제 할인·적립",
+          "priority": 2
+        }
+      ],
+      "visual": {
+        "theme": "gold",
+        "label": "ALL YOU NEED",
+        "brand": "KB 국민카드"
+      },
+      "monthlyGoalKRW": 300000,
+      "currentSpentKRW": 0,
+      "monthKey": "2026-09",
+      "autopayItems": [],
+      "history": {},
+      "memo": ""
+    },
+    {
+      "id": "nh",
+      "issuer": "NH농협카드",
+      "displayName": "NH올원더풀카드",
+      "edition": "올원더풀",
+      "benefitSummary": [
+        "생활 영역 혜택",
+        "의료 혜택",
+        "교통 혜택",
+        "일반 가맹점 포인트·할인"
+      ],
+      "merchantRules": [
+        {
+          "keywords": [
+            "병원",
+            "약국",
+            "의료"
+          ],
+          "benefitLabel": "의료 영역 혜택",
+          "priority": 10
+        },
+        {
+          "keywords": [
+            "버스",
+            "지하철",
+            "교통"
+          ],
+          "benefitLabel": "교통 혜택",
+          "priority": 8
+        },
+        {
+          "keywords": [
+            "생활",
+            "마트"
+          ],
+          "benefitLabel": "생활 영역 혜택",
+          "priority": 10
+        },
+        {
+          "keywords": [
+            "일반",
+            "기본"
+          ],
+          "benefitLabel": "일반 가맹점 포인트·할인",
+          "priority": 1
+        }
+      ],
+      "visual": {
+        "theme": "blue",
+        "label": "올원더풀",
+        "brand": "NH 농협카드"
+      },
+      "monthlyGoalKRW": 300000,
+      "currentSpentKRW": 0,
+      "monthKey": "2026-09",
+      "autopayItems": [],
+      "history": {},
+      "memo": ""
+    }
+  ]
+}
