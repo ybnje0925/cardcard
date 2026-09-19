@@ -14,6 +14,6 @@ export function validateData(d){
   if(c.officialProductId!==undefined&&(!str(c.officialProductId)||!['','samsung-taptap-o','naver-ed1','kb-all','nh-discount','nh-points'].includes(c.officialProductId)))throw Error('공식 상품 연결값이 올바르지 않습니다.');
   if(c.samsungPackage!==undefined&&!['','1','2','3','4','5','6'].includes(c.samsungPackage))throw Error('선택 패키지가 올바르지 않습니다.');
  }
- return rollover({...d,recentSearches:d.recentSearches??[],customMerchants:d.customMerchants??[]});
+ const cards=d.cards.map(c=>{if(c.id==='nh'&&(!c.officialProductId||c.officialProductId==='nh-discount'))return {...c,edition:'할인 PACK',officialProductId:'nh-discount'};if(c.officialProductId!==undefined)return c;if(c.id==='naver'&&c.edition==='확인 필요'&&c.displayName.includes('네이버 현대카드'))return {...c,edition:'Edition1 · 원본',officialProductId:'naver-ed1'};if(c.id==='kb'&&c.displayName.includes('ALL YOU NEED'))return {...c,edition:'KB ALL',officialProductId:'kb-all'};return c;});return rollover({...d,cards,recentSearches:d.recentSearches??[],customMerchants:d.customMerchants??[]});
 }
-export function loadData(){const raw=localStorage.getItem(STORAGE_KEY);return raw?validateData(JSON.parse(raw)):seedData();}
+export function loadData(){const raw=localStorage.getItem(STORAGE_KEY);return raw?validateData(JSON.parse(raw)):validateData(seedData());}
