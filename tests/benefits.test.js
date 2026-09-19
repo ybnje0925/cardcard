@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {seedData} from '../src/data/cards.js';
 import {compareBenefits,estimateBenefit,previousMonth,productFor,freshness,validateCatalog} from '../src/utils/benefits.js';
+import {analyzeFixedCostsWithData} from '../src/utils/fixedCostEngine.js';
 import {validateData} from '../src/utils/storage.js';
 import {refresh} from '../scripts/benefits/update.mjs';
 import {extractSource,hashSource} from '../scripts/benefits/adapters.mjs';
@@ -29,7 +30,13 @@ test('unknown edition never inherits current product; manual fields survive vali
 test('fixed-cost assumption bypasses previous-month shortfall and uses base tier',()=>{
  const cs=cards();for(const c of cs)c.history['2026-08']=0;const r=compareBenefits(cs,catalog,status,'넷플릭스',17000,'recurring',new Date(2026,8,19),[],{assumePreviousSpend:true});const kb=r.find(x=>x.card.id==='kb');assert.ok(kb.value>0);assert.match(kb.notes.join(' '),/실적 조건 충족 가정/);
 });
-test('current-month spending never satisfies previous-month condition; zero differs from missing',()=>{
+test('fixed costs recommend official telecom and apartment benefits across cards',()=>{
+ const cs=cards();for(const c of cs)c.history['2026-08']=0;
+ const phone=analyzeFixedCostsWithData(cs,[{id:'phone',name:'휴대폰 요금',amount:80000,cardId:'nh',paymentMethod:'자동납부'}],catalog,status,new Date(2026,8,19)).analyses[0];
+ assert.equal(phone.recommendation.id,'samsung');assert.equal(phone.bestValue,5000);assert.equal(phone.currentValue,2400);
+ const apartment=analyzeFixedCostsWithData(cs,[{id:'apt',name:'아파트 관리비',amount:100000,cardId:'kb',paymentMethod:'자동납부'}],catalog,status,new Date(2026,8,19)).analyses[0];
+ assert.equal(apartment.recommendation.id,'nh');assert.equal(apartment.bestValue,3000);assert.equal(apartment.currentValue,0);
+});test('current-month spending never satisfies previous-month condition; zero differs from missing',()=>{
  const cs=cards();cs[0].currentSpentKRW=900000;cs[0].monthlyGoalKRW=10000;cs[0].history['2026-08']=0;const r=compare(cs,'스타벅스',10000);assert.equal(r.find(r=>r.card.id==='samsung').value,0);assert.notEqual(r[0].card.id,'samsung');
  delete cs[0].history['2026-08'];assert.equal(compare(cs,'스타벅스',10000)[0].value,5000);assert.match(compare(cs,'스타벅스',10000)[0].notes.join(' '),/기록 없음/);
  assert.equal(previousMonth(new Date(2026,0,31)),'2025-12');

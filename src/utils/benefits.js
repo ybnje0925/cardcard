@@ -59,7 +59,7 @@ function matches(b,merchant,mode) {
  const keywords=[...b.keywords,b.merchant,b.category].map(normalize);
  return merchant.terms.some(term=>{
   const normalized=normalize(term);
-  return keywords.some(k=>k===normalized||normalized.length>=2&&(k.includes(normalized)||normalized.includes(k)));
+  return keywords.some(k=>k===normalized||k.length>=3&&normalized.length>=3&&(k.includes(normalized)||normalized.includes(k)));
  });
 }
 export function compareBenefits(cards,catalog,status,query,amount,mode='direct',date=new Date(),customMerchants=[],assumptions={}) {
@@ -73,7 +73,7 @@ export function compareBenefits(cards,catalog,status,query,amount,mode='direct',
   const scoped=naverTarget?candidates.filter(e=>e.b.scope!=='general'):candidates;
   const combined=scoped.map(e=>{
    const base=e.b.additionalTo&&candidates.find(c=>c.b.id===e.b.additionalTo&&c.value!==null);
-   return base&&e.value!==null&&e.eligible?{...e,value:Math.min(amount,e.value+base.value),base}:e;
+   return base&&e.value!==null&&e.eligible?{...e,value:Math.min(amount,e.value+base.value),base,capValue:e.value}:e;
   });
   const sorted=combined.sort((a,b)=>(b.value??b.rankingValue??-1)-(a.value??a.rankingValue??-1));
   const best=sorted[0];
