@@ -1,0 +1,23 @@
+{
+  "samsung": {
+    "url": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1483",
+    "sha256": "c227aa9f7a8935d7e27ddf9825be3e8962d6924f4aec50f0b2f4f93439ab802a",
+    "reviewedAt": "2026-09-17T13:17:07.736Z"
+  },
+  "naver": {
+    "url": "https://www.hyundaicard.com/upload/card/T_AEI-20260309-1644-88_금소법_네이버 현대카드 Ed1_v1.pdf",
+    "sha256": "97b7c4559c2f05bd0d6a20c520937ae60ecd473dce38cef39608b8f425669944",
+    "reviewedAt": "2026-09-17T13:17:07.790Z"
+  },
+  "kb": {
+    "url": "https://card.kbcard.com/cards/products/credit-cards/kb-all-card?solicitorcode=7030024780",
+    "sha256": "c071a9010ee1afb3fb862b25b39c9ecfe214c93c8b7ca358bf568a190ed44995",
+    "reviewedAt": "2026-09-17T13:17:08.234Z"
+  },
+  "nh": {
+    "url": "https://card.nonghyup.com/servlet/IpCc2021R.act?CD_WRS_SQNO=90010604",
+    "sha256": "c47a1ffe8c95f03bb6313a75a16e49b5f18c82cea09fede42465eab6507a876c",
+    "reviewedAt": "2026-09-17T13:17:08.413Z"
+  },
+  "catalogHash": "0b95c92bded83b0f09e58e212c6324bc089e4566652e0794c485d99b02bca747"
+}

@@ -1,0 +1,40 @@
+name: Check official card benefits
+on:
+  schedule:
+    - cron: '20 22 * * 0'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: official-benefits
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run benefits:update
+      - run: npm test
+      - run: npm run build
+      - name: Preserve verified data and publish status to repository
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add src/data/official-benefits.json src/data/benefit-status.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: check official benefit sources'
+            git push
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cardcard-static-site
+          path: dist/
+          retention-days: 14
+      - name: Flag sources needing attention after preserving output
+        run: node --input-type=module -e "import fs from 'node:fs'; const s=JSON.parse(fs.readFileSync('src/data/benefit-status.json')); if(Object.values(s.sources).some(x=>x.state!=='ok'))process.exit(1)"

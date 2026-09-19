@@ -1,0 +1,2435 @@
+{
+  "schemaVersion": 1,
+  "products": [
+    {
+      "id": "samsung-taptap-o",
+      "cardId": "samsung",
+      "name": "삼성 taptap O (AAP1483)",
+      "sourceId": "samsung",
+      "benefits": [
+        {
+          "id": "coffee50",
+          "merchant": "스타벅스",
+          "category": "커피",
+          "type": "discount",
+          "rate": 50,
+          "flatAmount": null,
+          "unit": "원",
+          "monthlyCap": 10000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 300000,
+          "minPayment": 0,
+          "keywords": [
+            "스타벅스"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "패키지 1·2·3 선택 시",
+            "가두매장 또는 사이렌오더 결제"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "백화점·쇼핑몰 임대매장"
+          ],
+          "spendExclusions": [
+            "할인 받은 결제 전액",
+            "세금·공과금",
+            "관리비·등록금",
+            "교통·택시",
+            "상품권·선불충전"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1483",
+          "sourceId": "samsung",
+          "checkedAt": "2026-09-17",
+          "packages": [
+            "1",
+            "2",
+            "3"
+          ],
+          "capGroup": "coffee"
+        },
+        {
+          "id": "coffee30",
+          "merchant": "스타벅스·투썸플레이스·카페베네·탐앤탐스·커피빈·엔제리너스·할리스·파스쿠찌·아티제·폴바셋",
+          "category": "커피",
+          "type": "discount",
+          "rate": 30,
+          "flatAmount": null,
+          "unit": "원",
+          "monthlyCap": 10000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 300000,
+          "minPayment": 0,
+          "keywords": [
+            "스타벅스",
+            "투썸플레이스",
+            "카페베네",
+            "탐앤탐스",
+            "커피빈",
+            "엔제리너스",
+            "할리스",
+            "파스쿠찌",
+            "아티제",
+            "폴바셋"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "패키지 4·5·6 선택 시",
+            "가두매장 결제, 스타벅스 사이렌오더 포함"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "백화점·쇼핑몰 임대매장"
+          ],
+          "spendExclusions": [
+            "할인 받은 결제 전액",
+            "세금·공과금",
+            "관리비·등록금",
+            "교통·택시",
+            "상품권·선불충전"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1483",
+          "sourceId": "samsung",
+          "checkedAt": "2026-09-17",
+          "packages": [
+            "4",
+            "5",
+            "6"
+          ],
+          "capGroup": "coffee"
+        },
+        {
+          "id": "transport",
+          "merchant": "버스·지하철·택시",
+          "category": "교통",
+          "type": "discount",
+          "rate": 10,
+          "flatAmount": null,
+          "unit": "원",
+          "monthlyCap": 5000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 300000,
+          "minPayment": 0,
+          "keywords": [
+            "버스",
+            "지하철",
+            "택시"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "버스·지하철은 후불교통 이용",
+            "교통·택시 통합 한도",
+            "신규 발급월과 다음 달은 실적 유예"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료"
+          ],
+          "spendExclusions": [
+            "할인 받은 결제 전액",
+            "세금·공과금",
+            "관리비·등록금",
+            "교통·택시",
+            "상품권·선불충전"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1483",
+          "sourceId": "samsung",
+          "checkedAt": "2026-09-17",
+          "capGroup": "transport"
+        },
+        {
+          "id": "mobile",
+          "merchant": "SKT·KT·LG U+·통신비",
+          "category": "통신",
+          "type": "discount",
+          "rate": 10,
+          "flatAmount": null,
+          "unit": "원",
+          "monthlyCap": 5000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 300000,
+          "minPayment": 0,
+          "keywords": [
+            "SKT",
+            "KT",
+            "LG U+",
+            "통신비"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "이동통신 자동납부",
+            "신규 발급월과 다음 달은 실적 유예"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "결합상품",
+            "단말기",
+            "대리점 결제"
+          ],
+          "spendExclusions": [
+            "할인 받은 결제 전액",
+            "세금·공과금",
+            "관리비·등록금",
+            "교통·택시",
+            "상품권·선불충전"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1483",
+          "sourceId": "samsung",
+          "checkedAt": "2026-09-17",
+          "mode": "recurring"
+        },
+        {
+          "id": "cinema",
+          "merchant": "CGV·롯데시네마",
+          "category": "영화",
+          "type": "discount",
+          "rate": null,
+          "flatAmount": 5000,
+          "unit": "원",
+          "monthlyCap": null,
+          "perTransactionCap": 5000,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": {
+            "day": 1,
+            "month": 2,
+            "year": 12
+          },
+          "previousSpend": 300000,
+          "minPayment": 10000,
+          "keywords": [
+            "CGV",
+            "롯데시네마"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "영화 티켓 1만원 이상",
+            "현장 또는 공식 홈페이지·앱 예매",
+            "신규 발급월과 다음 달은 실적 유예"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "예매 대행"
+          ],
+          "spendExclusions": [
+            "할인 받은 결제 전액",
+            "세금·공과금",
+            "관리비·등록금",
+            "교통·택시",
+            "상품권·선불충전"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1483",
+          "sourceId": "samsung",
+          "checkedAt": "2026-09-17"
+        },
+        {
+          "id": "overseas",
+          "merchant": "해외 가맹점",
+          "category": "해외",
+          "type": "points",
+          "rate": 1.3,
+          "flatAmount": null,
+          "unit": "P",
+          "monthlyCap": null,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 0,
+          "minPayment": 0,
+          "keywords": [
+            "해외 가맹점"
+          ],
+          "scope": "overseas",
+          "conditions": [
+            "해외겸용카드만 제공",
+            "해외 수수료 별도"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료"
+          ],
+          "spendExclusions": [
+            "할인 받은 결제 전액",
+            "세금·공과금",
+            "관리비·등록금",
+            "교통·택시",
+            "상품권·선불충전"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1483",
+          "sourceId": "samsung",
+          "checkedAt": "2026-09-17"
+        },
+        {
+          "id": "open7",
+          "merchant": "G마켓·옥션·11번가",
+          "category": "쇼핑",
+          "type": "discount",
+          "rate": 7,
+          "flatAmount": null,
+          "unit": "원",
+          "monthlyCap": 5000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 300000,
+          "minPayment": 0,
+          "keywords": [
+            "G마켓",
+            "옥션",
+            "11번가"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "해당 쇼핑 할인 패키지 선택 시"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "임대매장"
+          ],
+          "spendExclusions": [
+            "할인 받은 결제 전액",
+            "세금·공과금",
+            "관리비·등록금",
+            "교통·택시",
+            "상품권·선불충전"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1483",
+          "sourceId": "samsung",
+          "checkedAt": "2026-09-17",
+          "packages": [
+            "1",
+            "4"
+          ],
+          "capGroup": "shopping"
+        },
+        {
+          "id": "open1",
+          "merchant": "G마켓·옥션·11번가",
+          "category": "쇼핑",
+          "type": "points",
+          "rate": 1,
+          "flatAmount": null,
+          "unit": "P",
+          "monthlyCap": null,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 0,
+          "minPayment": 0,
+          "keywords": [
+            "G마켓",
+            "옥션",
+            "11번가"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "해당 업종 적립 패키지 선택 시"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "할인 적용 거래",
+            "임대매장"
+          ],
+          "spendExclusions": [
+            "할인 받은 결제 전액",
+            "세금·공과금",
+            "관리비·등록금",
+            "교통·택시",
+            "상품권·선불충전"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1483",
+          "sourceId": "samsung",
+          "checkedAt": "2026-09-17",
+          "packages": [
+            "2",
+            "3",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "id": "social7",
+          "merchant": "쿠팡·티몬·위메프",
+          "category": "쇼핑",
+          "type": "discount",
+          "rate": 7,
+          "flatAmount": null,
+          "unit": "원",
+          "monthlyCap": 5000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 300000,
+          "minPayment": 0,
+          "keywords": [
+            "쿠팡",
+            "티몬",
+            "위메프"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "해당 쇼핑 할인 패키지 선택 시"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "임대매장"
+          ],
+          "spendExclusions": [
+            "할인 받은 결제 전액",
+            "세금·공과금",
+            "관리비·등록금",
+            "교통·택시",
+            "상품권·선불충전"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1483",
+          "sourceId": "samsung",
+          "checkedAt": "2026-09-17",
+          "packages": [
+            "2",
+            "5"
+          ],
+          "capGroup": "shopping"
+        },
+        {
+          "id": "social1",
+          "merchant": "쿠팡·티몬·위메프",
+          "category": "쇼핑",
+          "type": "points",
+          "rate": 1,
+          "flatAmount": null,
+          "unit": "P",
+          "monthlyCap": null,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 0,
+          "minPayment": 0,
+          "keywords": [
+            "쿠팡",
+            "티몬",
+            "위메프"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "해당 업종 적립 패키지 선택 시"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "할인 적용 거래",
+            "임대매장"
+          ],
+          "spendExclusions": [
+            "할인 받은 결제 전액",
+            "세금·공과금",
+            "관리비·등록금",
+            "교통·택시",
+            "상품권·선불충전"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1483",
+          "sourceId": "samsung",
+          "checkedAt": "2026-09-17",
+          "packages": [
+            "1",
+            "3",
+            "4",
+            "6"
+          ]
+        },
+        {
+          "id": "trendy7",
+          "merchant": "편의점·올리브영·유니클로·자라·H&M·8SECONDS",
+          "category": "쇼핑",
+          "type": "discount",
+          "rate": 7,
+          "flatAmount": null,
+          "unit": "원",
+          "monthlyCap": 5000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 300000,
+          "minPayment": 0,
+          "keywords": [
+            "편의점",
+            "올리브영",
+            "유니클로",
+            "자라",
+            "H&M",
+            "8SECONDS"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "해당 쇼핑 할인 패키지 선택 시",
+            "가두매장 직접 결제만 적용"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "임대매장"
+          ],
+          "spendExclusions": [
+            "할인 받은 결제 전액",
+            "세금·공과금",
+            "관리비·등록금",
+            "교통·택시",
+            "상품권·선불충전"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1483",
+          "sourceId": "samsung",
+          "checkedAt": "2026-09-17",
+          "packages": [
+            "3",
+            "6"
+          ],
+          "capGroup": "shopping"
+        },
+        {
+          "id": "trendy1",
+          "merchant": "편의점·올리브영·유니클로·자라·H&M·8SECONDS",
+          "category": "쇼핑",
+          "type": "points",
+          "rate": 1,
+          "flatAmount": null,
+          "unit": "P",
+          "monthlyCap": null,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 0,
+          "minPayment": 0,
+          "keywords": [
+            "편의점",
+            "올리브영",
+            "유니클로",
+            "자라",
+            "H&M",
+            "8SECONDS"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "해당 업종 적립 패키지 선택 시"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "할인 적용 거래",
+            "임대매장"
+          ],
+          "spendExclusions": [
+            "할인 받은 결제 전액",
+            "세금·공과금",
+            "관리비·등록금",
+            "교통·택시",
+            "상품권·선불충전"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1483",
+          "sourceId": "samsung",
+          "checkedAt": "2026-09-17",
+          "packages": [
+            "1",
+            "2",
+            "4",
+            "5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "naver-ed1",
+      "cardId": "naver",
+      "name": "네이버 현대카드 (원본 / Edition1)",
+      "sourceId": "naver",
+      "benefits": [
+        {
+          "id": "general",
+          "merchant": "일반 가맹점",
+          "category": "네이버페이",
+          "type": "points",
+          "rate": 1,
+          "flatAmount": null,
+          "unit": "P",
+          "monthlyCap": null,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 300000,
+          "minPayment": 0,
+          "keywords": [
+            "일반 가맹점"
+          ],
+          "scope": "general",
+          "conditions": [
+            "멤버십 적립 대상 외 결제",
+            "신규 발급월과 다음 달은 실적 유예"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "전기요금",
+            "도시가스",
+            "아파트관리비",
+            "고속도로",
+            "고속버스",
+            "학교납입금",
+            "현대카드 할인 거래"
+          ],
+          "spendExclusions": [
+            "세금·공과금·사회보험",
+            "전기·가스·관리비",
+            "학교·등록금",
+            "상품권·선불충전",
+            "고속도로·고속버스",
+            "현대카드 할인·무이자할부",
+            "대출·수수료·이자"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://www.hyundaicard.com/upload/card/T_AEI-20260309-1644-88_금소법_네이버 현대카드 Ed1_v1.pdf",
+          "sourceId": "naver",
+          "checkedAt": "2026-09-17"
+        },
+        {
+          "id": "plus",
+          "merchant": "네이버·네이버쇼핑·스마트스토어·네이버페이",
+          "category": "네이버페이",
+          "type": "points",
+          "rate": 5,
+          "flatAmount": null,
+          "unit": "P",
+          "monthlyCap": 10000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": 200000,
+          "frequency": null,
+          "previousSpend": 300000,
+          "minPayment": 0,
+          "keywords": [
+            "네이버",
+            "네이버쇼핑",
+            "스마트스토어",
+            "네이버페이"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "네이버플러스 회원 + 적립 대상 아이콘 있는 주문",
+            "월 대상 결제액 20만원까지, 멤버십 자체 적립 별도"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "전기요금",
+            "도시가스",
+            "아파트관리비",
+            "고속도로",
+            "고속버스",
+            "학교납입금",
+            "현대카드 할인 거래"
+          ],
+          "spendExclusions": [
+            "세금·공과금·사회보험",
+            "전기·가스·관리비",
+            "학교·등록금",
+            "상품권·선불충전",
+            "고속도로·고속버스",
+            "현대카드 할인·무이자할부",
+            "대출·수수료·이자"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://www.hyundaicard.com/upload/card/T_AEI-20260309-1644-88_금소법_네이버 현대카드 Ed1_v1.pdf",
+          "sourceId": "naver",
+          "checkedAt": "2026-09-17",
+          "mode": "naver-plus"
+        },
+        {
+          "id": "nonmember",
+          "merchant": "네이버·네이버쇼핑·스마트스토어·네이버페이",
+          "category": "네이버페이",
+          "type": "points",
+          "rate": 1,
+          "flatAmount": null,
+          "unit": "P",
+          "monthlyCap": 2000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": 200000,
+          "frequency": null,
+          "previousSpend": 300000,
+          "minPayment": 0,
+          "keywords": [
+            "네이버",
+            "네이버쇼핑",
+            "스마트스토어",
+            "네이버페이"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "멤버십 비회원의 적립 대상 주문",
+            "월 대상 결제액 20만원까지"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "전기요금",
+            "도시가스",
+            "아파트관리비",
+            "고속도로",
+            "고속버스",
+            "학교납입금",
+            "현대카드 할인 거래"
+          ],
+          "spendExclusions": [
+            "세금·공과금·사회보험",
+            "전기·가스·관리비",
+            "학교·등록금",
+            "상품권·선불충전",
+            "고속도로·고속버스",
+            "현대카드 할인·무이자할부",
+            "대출·수수료·이자"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://www.hyundaicard.com/upload/card/T_AEI-20260309-1644-88_금소법_네이버 현대카드 Ed1_v1.pdf",
+          "sourceId": "naver",
+          "checkedAt": "2026-09-17",
+          "mode": "naver-nonmember"
+        },
+        {
+          "id": "membership",
+          "merchant": "네이버플러스 멤버십",
+          "category": "구독",
+          "type": "service",
+          "rate": null,
+          "flatAmount": null,
+          "unit": "원",
+          "monthlyCap": null,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": {
+            "month": 1
+          },
+          "previousSpend": 300000,
+          "minPayment": 0,
+          "keywords": [
+            "네이버플러스 멤버십"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "멤버십 정기결제 카드로 등록하면 이용권 제공",
+            "결제 할인액으로 환산하지 않음"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료"
+          ],
+          "spendExclusions": [],
+          "status": "display-only",
+          "sourceUrl": "https://www.hyundaicard.com/upload/card/T_AEI-20260309-1644-88_금소법_네이버 현대카드 Ed1_v1.pdf",
+          "sourceId": "naver",
+          "checkedAt": "2026-09-17"
+        }
+      ]
+    },
+    {
+      "id": "kb-all",
+      "cardId": "kb",
+      "name": "KB ALL (구 WE:SH All)",
+      "sourceId": "kb",
+      "benefits": [
+        {
+          "id": "domestic",
+          "merchant": "국내 가맹점",
+          "category": "일반",
+          "type": "discount",
+          "rate": 1,
+          "flatAmount": null,
+          "unit": "원",
+          "monthlyCap": null,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 0,
+          "minPayment": 0,
+          "keywords": [
+            "국내 가맹점"
+          ],
+          "scope": "general",
+          "conditions": [
+            "카드사 등록 업종 기준이며 제외 거래·취소 거래에는 적용되지 않습니다."
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "아파트관리비",
+            "학교납입금",
+            "정부지원금",
+            "신차구매 할인"
+          ],
+          "spendExclusions": [
+            "자동납부 할인 받은 결제 전액",
+            "상품권·선불충전",
+            "학교·등록금",
+            "세금·공과금·사회보험",
+            "관리비",
+            "무승인 교통 거래",
+            "대출·수수료·이자"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-all-card?solicitorcode=7030024780",
+          "sourceId": "kb",
+          "checkedAt": "2026-09-17"
+        },
+        {
+          "id": "overseas",
+          "merchant": "해외 가맹점",
+          "category": "해외",
+          "type": "discount",
+          "rate": 2,
+          "flatAmount": null,
+          "unit": "원",
+          "monthlyCap": 40000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 0,
+          "minPayment": 0,
+          "keywords": [
+            "해외 가맹점"
+          ],
+          "scope": "overseas",
+          "conditions": [
+            "해외겸용만 제공, 수수료 별도"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "아파트관리비",
+            "학교납입금",
+            "정부지원금",
+            "신차구매 할인"
+          ],
+          "spendExclusions": [
+            "자동납부 할인 받은 결제 전액",
+            "상품권·선불충전",
+            "학교·등록금",
+            "세금·공과금·사회보험",
+            "관리비",
+            "무승인 교통 거래",
+            "대출·수수료·이자"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-all-card?solicitorcode=7030024780",
+          "sourceId": "kb",
+          "checkedAt": "2026-09-17"
+        },
+        {
+          "id": "membership",
+          "merchant": "네이버플러스·로켓와우·쿠팡 로켓와우",
+          "category": "자동납부",
+          "type": "discount",
+          "rate": 50,
+          "flatAmount": null,
+          "unit": "원",
+          "monthlyCap": 3000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 400000,
+          "minPayment": 0,
+          "keywords": [
+            "네이버플러스",
+            "로켓와우",
+            "쿠팡 로켓와우"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "세 영역 통합 월 3,000원 추가 할인",
+            "공식 정기결제·자동납부",
+            "신규 사용등록일부터 다음 달 말까지 실적 유예"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "인앱결제",
+            "간편결제",
+            "통신 결합상품"
+          ],
+          "spendExclusions": [
+            "자동납부 할인 받은 결제 전액",
+            "상품권·선불충전",
+            "학교·등록금",
+            "세금·공과금·사회보험",
+            "관리비",
+            "무승인 교통 거래",
+            "대출·수수료·이자"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-all-card?solicitorcode=7030024780",
+          "sourceId": "kb",
+          "checkedAt": "2026-09-17",
+          "mode": "recurring",
+          "capGroup": "autopay",
+          "additionalTo": "domestic"
+        },
+        {
+          "id": "ott",
+          "merchant": "넷플릭스·유튜브 프리미엄·웨이브·티빙·디즈니플러스",
+          "category": "자동납부",
+          "type": "discount",
+          "rate": 10,
+          "flatAmount": null,
+          "unit": "원",
+          "monthlyCap": 3000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 400000,
+          "minPayment": 0,
+          "keywords": [
+            "넷플릭스",
+            "유튜브 프리미엄",
+            "웨이브",
+            "티빙",
+            "디즈니플러스"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "세 영역 통합 월 3,000원 추가 할인",
+            "공식 정기결제·자동납부",
+            "신규 사용등록일부터 다음 달 말까지 실적 유예"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "인앱결제",
+            "간편결제",
+            "통신 결합상품"
+          ],
+          "spendExclusions": [
+            "자동납부 할인 받은 결제 전액",
+            "상품권·선불충전",
+            "학교·등록금",
+            "세금·공과금·사회보험",
+            "관리비",
+            "무승인 교통 거래",
+            "대출·수수료·이자"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-all-card?solicitorcode=7030024780",
+          "sourceId": "kb",
+          "checkedAt": "2026-09-17",
+          "mode": "recurring",
+          "capGroup": "autopay",
+          "additionalTo": "domestic"
+        },
+        {
+          "id": "mobile",
+          "merchant": "SKT·KT·LG U+·Liiv M·통신비",
+          "category": "자동납부",
+          "type": "discount",
+          "rate": 5,
+          "flatAmount": null,
+          "unit": "원",
+          "monthlyCap": 3000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 400000,
+          "minPayment": 0,
+          "keywords": [
+            "SKT",
+            "KT",
+            "LG U+",
+            "Liiv M",
+            "통신비"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "세 영역 통합 월 3,000원 추가 할인",
+            "공식 정기결제·자동납부",
+            "신규 사용등록일부터 다음 달 말까지 실적 유예"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "인앱결제",
+            "간편결제",
+            "통신 결합상품"
+          ],
+          "spendExclusions": [
+            "자동납부 할인 받은 결제 전액",
+            "상품권·선불충전",
+            "학교·등록금",
+            "세금·공과금·사회보험",
+            "관리비",
+            "무승인 교통 거래",
+            "대출·수수료·이자"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-all-card?solicitorcode=7030024780",
+          "sourceId": "kb",
+          "checkedAt": "2026-09-17",
+          "mode": "recurring",
+          "capGroup": "autopay",
+          "additionalTo": "domestic"
+        }
+      ]
+    },
+    {
+      "id": "nh-discount",
+      "cardId": "nh",
+      "name": "NH올원더풀 · 할인 PACK",
+      "sourceId": "nh",
+      "benefits": [
+        {
+          "id": "shopping",
+          "merchant": "롯데백화점·신세계백화점·현대백화점·AK백화점·갤러리아·하나로마트·이마트·롯데마트",
+          "category": "생활소비",
+          "type": "discount",
+          "rate": 5,
+          "flatAmount": null,
+          "unit": "원",
+          "monthlyCap": 8000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 400000,
+          "minPayment": 0,
+          "keywords": [
+            "롯데백화점",
+            "신세계백화점",
+            "현대백화점",
+            "AK백화점",
+            "갤러리아",
+            "하나로마트",
+            "이마트",
+            "롯데마트"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "오프라인 직접 결제만"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "기업형 슈퍼마켓",
+            "임대매장"
+          ],
+          "spendExclusions": [
+            "학교·등록금·임대료",
+            "세금·공과금·사회보험",
+            "관리비·가스·전기",
+            "상품권·선불충전",
+            "후불교통·택시",
+            "대출·수수료·이자",
+            "포인트 사용액"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://card.nonghyup.com/servlet/IpCc2021R.act?CD_WRS_SQNO=90010604",
+          "sourceId": "nh",
+          "checkedAt": "2026-09-17",
+          "capGroup": "생활소비",
+          "tiers": [
+            {
+              "previousSpend": 400000,
+              "monthlyCap": 8000
+            },
+            {
+              "previousSpend": 800000,
+              "monthlyCap": 15000
+            }
+          ]
+        },
+        {
+          "id": "homeshopping",
+          "merchant": "GS SHOP·CJ온스타일·현대홈쇼핑·롯데홈쇼핑·NS홈쇼핑",
+          "category": "생활소비",
+          "type": "discount",
+          "rate": 5,
+          "flatAmount": null,
+          "unit": "원",
+          "monthlyCap": 8000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 400000,
+          "minPayment": 0,
+          "keywords": [
+            "GS SHOP",
+            "CJ온스타일",
+            "현대홈쇼핑",
+            "롯데홈쇼핑",
+            "NS홈쇼핑"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "카드사 등록 업종 기준이며 제외 거래·취소 거래에는 적용되지 않습니다."
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "임대매장",
+            "업종 식별 불가 PG·간편결제",
+            "임대료",
+            "학교납입금",
+            "포인트 사용분"
+          ],
+          "spendExclusions": [
+            "학교·등록금·임대료",
+            "세금·공과금·사회보험",
+            "관리비·가스·전기",
+            "상품권·선불충전",
+            "후불교통·택시",
+            "대출·수수료·이자",
+            "포인트 사용액"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://card.nonghyup.com/servlet/IpCc2021R.act?CD_WRS_SQNO=90010604",
+          "sourceId": "nh",
+          "checkedAt": "2026-09-17",
+          "capGroup": "생활소비",
+          "tiers": [
+            {
+              "previousSpend": 400000,
+              "monthlyCap": 8000
+            },
+            {
+              "previousSpend": 800000,
+              "monthlyCap": 15000
+            }
+          ]
+        },
+        {
+          "id": "fuel",
+          "merchant": "주유·주유소·충전소",
+          "category": "생활소비",
+          "type": "discount",
+          "rate": 5,
+          "flatAmount": null,
+          "unit": "원",
+          "monthlyCap": 8000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 400000,
+          "minPayment": 0,
+          "keywords": [
+            "주유",
+            "주유소",
+            "충전소"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "전기차는 환경부 공공급속충전기 지정 결제만"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "임대매장",
+            "업종 식별 불가 PG·간편결제",
+            "임대료",
+            "학교납입금",
+            "포인트 사용분"
+          ],
+          "spendExclusions": [
+            "학교·등록금·임대료",
+            "세금·공과금·사회보험",
+            "관리비·가스·전기",
+            "상품권·선불충전",
+            "후불교통·택시",
+            "대출·수수료·이자",
+            "포인트 사용액"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://card.nonghyup.com/servlet/IpCc2021R.act?CD_WRS_SQNO=90010604",
+          "sourceId": "nh",
+          "checkedAt": "2026-09-17",
+          "capGroup": "생활소비",
+          "tiers": [
+            {
+              "previousSpend": 400000,
+              "monthlyCap": 8000
+            },
+            {
+              "previousSpend": 800000,
+              "monthlyCap": 15000
+            }
+          ]
+        },
+        {
+          "id": "mobile",
+          "merchant": "SKT·KT·LG U+·통신비",
+          "category": "생활소비",
+          "type": "discount",
+          "rate": 3,
+          "flatAmount": null,
+          "unit": "원",
+          "monthlyCap": 8000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": {
+            "month": 1
+          },
+          "previousSpend": 400000,
+          "minPayment": 0,
+          "keywords": [
+            "SKT",
+            "KT",
+            "LG U+",
+            "통신비"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "자동납부 월 1회",
+            "알뜰폰·TV·인터넷 제외"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "임대매장",
+            "업종 식별 불가 PG·간편결제",
+            "임대료",
+            "학교납입금",
+            "포인트 사용분"
+          ],
+          "spendExclusions": [
+            "학교·등록금·임대료",
+            "세금·공과금·사회보험",
+            "관리비·가스·전기",
+            "상품권·선불충전",
+            "후불교통·택시",
+            "대출·수수료·이자",
+            "포인트 사용액"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://card.nonghyup.com/servlet/IpCc2021R.act?CD_WRS_SQNO=90010604",
+          "sourceId": "nh",
+          "checkedAt": "2026-09-17",
+          "capGroup": "생활소비",
+          "tiers": [
+            {
+              "previousSpend": 400000,
+              "monthlyCap": 8000
+            },
+            {
+              "previousSpend": 800000,
+              "monthlyCap": 15000
+            }
+          ],
+          "mode": "recurring"
+        },
+        {
+          "id": "apartment",
+          "merchant": "아파트관리비",
+          "category": "생활소비",
+          "type": "discount",
+          "rate": 3,
+          "flatAmount": null,
+          "unit": "원",
+          "monthlyCap": 8000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": {
+            "month": 1
+          },
+          "previousSpend": 400000,
+          "minPayment": 0,
+          "keywords": [
+            "아파트관리비"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "관리비 업종 자동납부 월 1회",
+            "관리비는 전월실적 제외"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "임대매장",
+            "업종 식별 불가 PG·간편결제",
+            "임대료",
+            "학교납입금",
+            "포인트 사용분"
+          ],
+          "spendExclusions": [
+            "학교·등록금·임대료",
+            "세금·공과금·사회보험",
+            "관리비·가스·전기",
+            "상품권·선불충전",
+            "후불교통·택시",
+            "대출·수수료·이자",
+            "포인트 사용액"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://card.nonghyup.com/servlet/IpCc2021R.act?CD_WRS_SQNO=90010604",
+          "sourceId": "nh",
+          "checkedAt": "2026-09-17",
+          "capGroup": "생활소비",
+          "tiers": [
+            {
+              "previousSpend": 400000,
+              "monthlyCap": 8000
+            },
+            {
+              "previousSpend": 800000,
+              "monthlyCap": 15000
+            }
+          ],
+          "mode": "recurring"
+        },
+        {
+          "id": "medical",
+          "merchant": "병원·의원·한의원·약국",
+          "category": "건강",
+          "type": "discount",
+          "rate": 10,
+          "flatAmount": null,
+          "unit": "원",
+          "monthlyCap": 8000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 400000,
+          "minPayment": 0,
+          "keywords": [
+            "병원",
+            "의원",
+            "한의원",
+            "약국"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "오프라인 직접 결제"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "동물병원",
+            "임대매장"
+          ],
+          "spendExclusions": [
+            "학교·등록금·임대료",
+            "세금·공과금·사회보험",
+            "관리비·가스·전기",
+            "상품권·선불충전",
+            "후불교통·택시",
+            "대출·수수료·이자",
+            "포인트 사용액"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://card.nonghyup.com/servlet/IpCc2021R.act?CD_WRS_SQNO=90010604",
+          "sourceId": "nh",
+          "checkedAt": "2026-09-17",
+          "capGroup": "건강",
+          "tiers": [
+            {
+              "previousSpend": 400000,
+              "monthlyCap": 8000
+            },
+            {
+              "previousSpend": 800000,
+              "monthlyCap": 15000
+            }
+          ]
+        },
+        {
+          "id": "beauty",
+          "merchant": "미용실·피부미용원",
+          "category": "건강",
+          "type": "discount",
+          "rate": 10,
+          "flatAmount": null,
+          "unit": "원",
+          "monthlyCap": 8000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 400000,
+          "minPayment": 0,
+          "keywords": [
+            "미용실",
+            "피부미용원"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "오프라인 직접 결제"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "임대매장",
+            "업종 식별 불가 PG·간편결제",
+            "임대료",
+            "학교납입금",
+            "포인트 사용분"
+          ],
+          "spendExclusions": [
+            "학교·등록금·임대료",
+            "세금·공과금·사회보험",
+            "관리비·가스·전기",
+            "상품권·선불충전",
+            "후불교통·택시",
+            "대출·수수료·이자",
+            "포인트 사용액"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://card.nonghyup.com/servlet/IpCc2021R.act?CD_WRS_SQNO=90010604",
+          "sourceId": "nh",
+          "checkedAt": "2026-09-17",
+          "capGroup": "건강",
+          "tiers": [
+            {
+              "previousSpend": 400000,
+              "monthlyCap": 8000
+            },
+            {
+              "previousSpend": 800000,
+              "monthlyCap": 15000
+            }
+          ]
+        },
+        {
+          "id": "fitness",
+          "merchant": "헬스장·종합스포츠센터·골프연습장·요가·필라테스·안경점",
+          "category": "건강",
+          "type": "discount",
+          "rate": 5,
+          "flatAmount": null,
+          "unit": "원",
+          "monthlyCap": 8000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 400000,
+          "minPayment": 0,
+          "keywords": [
+            "헬스장",
+            "종합스포츠센터",
+            "골프연습장",
+            "요가",
+            "필라테스",
+            "안경점"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "오프라인 직접 결제"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "임대매장",
+            "업종 식별 불가 PG·간편결제",
+            "임대료",
+            "학교납입금",
+            "포인트 사용분"
+          ],
+          "spendExclusions": [
+            "학교·등록금·임대료",
+            "세금·공과금·사회보험",
+            "관리비·가스·전기",
+            "상품권·선불충전",
+            "후불교통·택시",
+            "대출·수수료·이자",
+            "포인트 사용액"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://card.nonghyup.com/servlet/IpCc2021R.act?CD_WRS_SQNO=90010604",
+          "sourceId": "nh",
+          "checkedAt": "2026-09-17",
+          "capGroup": "건강",
+          "tiers": [
+            {
+              "previousSpend": 400000,
+              "monthlyCap": 8000
+            },
+            {
+              "previousSpend": 800000,
+              "monthlyCap": 15000
+            }
+          ]
+        },
+        {
+          "id": "transit",
+          "merchant": "버스·지하철",
+          "category": "교통",
+          "type": "discount",
+          "rate": 15,
+          "flatAmount": null,
+          "unit": "원",
+          "monthlyCap": 8000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 400000,
+          "minPayment": 0,
+          "keywords": [
+            "버스",
+            "지하철"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "후불교통 결제만"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "임대매장",
+            "업종 식별 불가 PG·간편결제",
+            "임대료",
+            "학교납입금",
+            "포인트 사용분"
+          ],
+          "spendExclusions": [
+            "학교·등록금·임대료",
+            "세금·공과금·사회보험",
+            "관리비·가스·전기",
+            "상품권·선불충전",
+            "후불교통·택시",
+            "대출·수수료·이자",
+            "포인트 사용액"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://card.nonghyup.com/servlet/IpCc2021R.act?CD_WRS_SQNO=90010604",
+          "sourceId": "nh",
+          "checkedAt": "2026-09-17",
+          "capGroup": "교통",
+          "tiers": [
+            {
+              "previousSpend": 400000,
+              "monthlyCap": 8000
+            },
+            {
+              "previousSpend": 800000,
+              "monthlyCap": 15000
+            }
+          ]
+        },
+        {
+          "id": "travel",
+          "merchant": "KTX·SRT·고속버스·택시",
+          "category": "교통",
+          "type": "discount",
+          "rate": 5,
+          "flatAmount": null,
+          "unit": "원",
+          "monthlyCap": 8000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 400000,
+          "minPayment": 0,
+          "keywords": [
+            "KTX",
+            "SRT",
+            "고속버스",
+            "택시"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "카드사 등록 업종 기준이며 제외 거래·취소 거래에는 적용되지 않습니다."
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "임대매장",
+            "업종 식별 불가 PG·간편결제",
+            "임대료",
+            "학교납입금",
+            "포인트 사용분"
+          ],
+          "spendExclusions": [
+            "학교·등록금·임대료",
+            "세금·공과금·사회보험",
+            "관리비·가스·전기",
+            "상품권·선불충전",
+            "후불교통·택시",
+            "대출·수수료·이자",
+            "포인트 사용액"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://card.nonghyup.com/servlet/IpCc2021R.act?CD_WRS_SQNO=90010604",
+          "sourceId": "nh",
+          "checkedAt": "2026-09-17",
+          "capGroup": "교통",
+          "tiers": [
+            {
+              "previousSpend": 400000,
+              "monthlyCap": 8000
+            },
+            {
+              "previousSpend": 800000,
+              "monthlyCap": 15000
+            }
+          ]
+        },
+        {
+          "id": "driver",
+          "merchant": "카카오T대리",
+          "category": "교통",
+          "type": "discount",
+          "rate": 5,
+          "flatAmount": null,
+          "unit": "원",
+          "monthlyCap": 8000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 400000,
+          "minPayment": 0,
+          "keywords": [
+            "카카오T대리"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "카카오T대리 자동결제 등록"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "임대매장",
+            "업종 식별 불가 PG·간편결제",
+            "임대료",
+            "학교납입금",
+            "포인트 사용분"
+          ],
+          "spendExclusions": [
+            "학교·등록금·임대료",
+            "세금·공과금·사회보험",
+            "관리비·가스·전기",
+            "상품권·선불충전",
+            "후불교통·택시",
+            "대출·수수료·이자",
+            "포인트 사용액"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://card.nonghyup.com/servlet/IpCc2021R.act?CD_WRS_SQNO=90010604",
+          "sourceId": "nh",
+          "checkedAt": "2026-09-17",
+          "capGroup": "교통",
+          "tiers": [
+            {
+              "previousSpend": 400000,
+              "monthlyCap": 8000
+            },
+            {
+              "previousSpend": 800000,
+              "monthlyCap": 15000
+            }
+          ],
+          "mode": "recurring"
+        },
+        {
+          "id": "ott",
+          "merchant": "넷플릭스·유튜브 프리미엄",
+          "category": "여가",
+          "type": "discount",
+          "rate": 30,
+          "flatAmount": null,
+          "unit": "원",
+          "monthlyCap": 8000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 400000,
+          "minPayment": 0,
+          "keywords": [
+            "넷플릭스",
+            "유튜브 프리미엄"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "공식 사이트·앱 정기결제",
+            "인앱·일부 페이·1회성 결제 제외"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "임대매장",
+            "업종 식별 불가 PG·간편결제",
+            "임대료",
+            "학교납입금",
+            "포인트 사용분"
+          ],
+          "spendExclusions": [
+            "학교·등록금·임대료",
+            "세금·공과금·사회보험",
+            "관리비·가스·전기",
+            "상품권·선불충전",
+            "후불교통·택시",
+            "대출·수수료·이자",
+            "포인트 사용액"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://card.nonghyup.com/servlet/IpCc2021R.act?CD_WRS_SQNO=90010604",
+          "sourceId": "nh",
+          "checkedAt": "2026-09-17",
+          "capGroup": "여가",
+          "tiers": [
+            {
+              "previousSpend": 400000,
+              "monthlyCap": 8000
+            },
+            {
+              "previousSpend": 800000,
+              "monthlyCap": 15000
+            }
+          ],
+          "mode": "recurring"
+        },
+        {
+          "id": "cinema",
+          "merchant": "CGV·롯데시네마·메가박스",
+          "category": "여가",
+          "type": "discount",
+          "rate": 10,
+          "flatAmount": null,
+          "unit": "원",
+          "monthlyCap": 8000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 400000,
+          "minPayment": 0,
+          "keywords": [
+            "CGV",
+            "롯데시네마",
+            "메가박스"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "영화 티켓만, 상품권·매점 제외"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "임대매장",
+            "업종 식별 불가 PG·간편결제",
+            "임대료",
+            "학교납입금",
+            "포인트 사용분"
+          ],
+          "spendExclusions": [
+            "학교·등록금·임대료",
+            "세금·공과금·사회보험",
+            "관리비·가스·전기",
+            "상품권·선불충전",
+            "후불교통·택시",
+            "대출·수수료·이자",
+            "포인트 사용액"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://card.nonghyup.com/servlet/IpCc2021R.act?CD_WRS_SQNO=90010604",
+          "sourceId": "nh",
+          "checkedAt": "2026-09-17",
+          "capGroup": "여가",
+          "tiers": [
+            {
+              "previousSpend": 400000,
+              "monthlyCap": 8000
+            },
+            {
+              "previousSpend": 800000,
+              "monthlyCap": 15000
+            }
+          ]
+        },
+        {
+          "id": "coffee",
+          "merchant": "스타벅스·투썸플레이스·이디야·커피빈",
+          "category": "여가",
+          "type": "discount",
+          "rate": 10,
+          "flatAmount": null,
+          "unit": "원",
+          "monthlyCap": 8000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 400000,
+          "minPayment": 0,
+          "keywords": [
+            "스타벅스",
+            "투썸플레이스",
+            "이디야",
+            "커피빈"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "앱 주문 제외, 스타벅스 사이렌오더 포함"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "임대매장",
+            "업종 식별 불가 PG·간편결제",
+            "임대료",
+            "학교납입금",
+            "포인트 사용분"
+          ],
+          "spendExclusions": [
+            "학교·등록금·임대료",
+            "세금·공과금·사회보험",
+            "관리비·가스·전기",
+            "상품권·선불충전",
+            "후불교통·택시",
+            "대출·수수료·이자",
+            "포인트 사용액"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://card.nonghyup.com/servlet/IpCc2021R.act?CD_WRS_SQNO=90010604",
+          "sourceId": "nh",
+          "checkedAt": "2026-09-17",
+          "capGroup": "여가",
+          "tiers": [
+            {
+              "previousSpend": 400000,
+              "monthlyCap": 8000
+            },
+            {
+              "previousSpend": 800000,
+              "monthlyCap": 15000
+            }
+          ]
+        },
+        {
+          "id": "bakery",
+          "merchant": "파리바게트·뚜레쥬르·파리크라상",
+          "category": "여가",
+          "type": "discount",
+          "rate": 5,
+          "flatAmount": null,
+          "unit": "원",
+          "monthlyCap": 8000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 400000,
+          "minPayment": 0,
+          "keywords": [
+            "파리바게트",
+            "뚜레쥬르",
+            "파리크라상"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "앱 주문 제외"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "임대매장",
+            "업종 식별 불가 PG·간편결제",
+            "임대료",
+            "학교납입금",
+            "포인트 사용분"
+          ],
+          "spendExclusions": [
+            "학교·등록금·임대료",
+            "세금·공과금·사회보험",
+            "관리비·가스·전기",
+            "상품권·선불충전",
+            "후불교통·택시",
+            "대출·수수료·이자",
+            "포인트 사용액"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://card.nonghyup.com/servlet/IpCc2021R.act?CD_WRS_SQNO=90010604",
+          "sourceId": "nh",
+          "checkedAt": "2026-09-17",
+          "capGroup": "여가",
+          "tiers": [
+            {
+              "previousSpend": 400000,
+              "monthlyCap": 8000
+            },
+            {
+              "previousSpend": 800000,
+              "monthlyCap": 15000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nh-points",
+      "cardId": "nh",
+      "name": "NH올원더풀 · 적립 PACK",
+      "sourceId": "nh",
+      "benefits": [
+        {
+          "id": "base",
+          "merchant": "국내외 가맹점",
+          "category": "일반",
+          "type": "points",
+          "rate": 1,
+          "flatAmount": null,
+          "unit": "P",
+          "monthlyCap": 50000,
+          "perTransactionCap": null,
+          "dailyCap": 10000,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 400000,
+          "minPayment": 0,
+          "keywords": [
+            "국내외 가맹점"
+          ],
+          "scope": "all",
+          "conditions": [
+            "기본 NH포인트 적립",
+            "일 1만P·월 5만P 한도"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "임대매장",
+            "업종 식별 불가 PG·간편결제",
+            "임대료",
+            "학교납입금",
+            "포인트 사용분"
+          ],
+          "spendExclusions": [
+            "학교·등록금·임대료",
+            "세금·공과금·사회보험",
+            "관리비·가스·전기",
+            "상품권·선불충전",
+            "후불교통·택시",
+            "대출·수수료·이자",
+            "포인트 사용액"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://card.nonghyup.com/servlet/IpCc2021R.act?CD_WRS_SQNO=90010604",
+          "sourceId": "nh",
+          "checkedAt": "2026-09-17"
+        },
+        {
+          "id": "smart",
+          "merchant": "건강·H&B·쇼핑·여행·여가",
+          "category": "스마트적립",
+          "type": "points",
+          "rate": null,
+          "flatAmount": null,
+          "unit": "P",
+          "monthlyCap": 10000,
+          "perTransactionCap": null,
+          "dailyCap": null,
+          "monthlySpendCap": null,
+          "frequency": null,
+          "previousSpend": 400000,
+          "minPayment": 0,
+          "keywords": [
+            "건강",
+            "H&B",
+            "쇼핑",
+            "여행",
+            "여가"
+          ],
+          "scope": "merchant",
+          "conditions": [
+            "월 이용액 1위 영역 +3%, 2위 +2%",
+            "월 전체 업종 순위가 필요해 결제 전 계산 제외",
+            "기본적립과 별도, 다음 달 15일 이후 적립"
+          ],
+          "exclusions": [
+            "무이자할부",
+            "상품권",
+            "선불카드",
+            "충전",
+            "국세",
+            "지방세",
+            "등록금",
+            "공과금",
+            "사회보험",
+            "현금서비스",
+            "카드론",
+            "연회비",
+            "수수료",
+            "임대매장",
+            "업종 식별 불가 PG·간편결제",
+            "임대료",
+            "학교납입금",
+            "포인트 사용분"
+          ],
+          "spendExclusions": [
+            "학교·등록금·임대료",
+            "세금·공과금·사회보험",
+            "관리비·가스·전기",
+            "상품권·선불충전",
+            "후불교통·택시",
+            "대출·수수료·이자",
+            "포인트 사용액"
+          ],
+          "status": "display-only",
+          "sourceUrl": "https://card.nonghyup.com/servlet/IpCc2021R.act?CD_WRS_SQNO=90010604",
+          "sourceId": "nh",
+          "checkedAt": "2026-09-17"
+        }
+      ]
+    }
+  ]
+}

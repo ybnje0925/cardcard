@@ -1,0 +1,5 @@
+const CACHE='my-cards-v1';
+const BASE=new URL('./',self.location).href;
+self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll([BASE,BASE+'index.html',BASE+'manifest.json',BASE+'icon.svg',BASE+'icon-192.png',BASE+'icon-512.png']))));
+self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('my-cards-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
+self.addEventListener('fetch',event=>{if(event.request.method!=='GET'||new URL(event.request.url).origin!==self.location.origin)return;event.respondWith(fetch(event.request).then(response=>{if(response.ok){const copy=response.clone();event.waitUntil(caches.open(CACHE).then(cache=>cache.put(event.request,copy)));}return response;}).catch(async()=>{const cached=await caches.match(event.request,{ignoreVary:true});if(cached)return cached;if(event.request.mode==='navigate')return caches.match(BASE+'index.html');return Response.error();}));});

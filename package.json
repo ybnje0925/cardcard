@@ -1,0 +1,25 @@
+{
+  "name": "my-cards",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "node scripts/benefits/validate.mjs && vite build && node scripts/precache.js",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test tests/*.test.js",
+    "test:browser": "node tests/browser-check.mjs && node tests/benefits-browser.mjs",
+    "benefits:build": "node scripts/benefits/update.mjs build",
+    "benefits:update": "node scripts/benefits/update.mjs check"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "lucide-react": "^0.468.0"
+  },
+  "devDependencies": {
+    "vite": "^6.3.0",
+    "@vitejs/plugin-react": "^4.4.0",
+    "@playwright/test": "^1.51.0"
+  }
+}
