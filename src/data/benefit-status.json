@@ -1,13 +1,13 @@
 {
-  "checkedAt": "2026-09-21T00:19:09.075Z",
+  "checkedAt": "2026-09-28T00:54:02.228Z",
   "sources": {
     "samsung": {
       "state": "ok",
       "message": "검토한 공식 원문과 동일"
     },
     "naver": {
-      "state": "failed",
-      "message": "연결 시간 초과"
+      "state": "ok",
+      "message": "검토한 공식 원문과 동일"
     },
     "kb": {
       "state": "ok",
